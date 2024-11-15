@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <title>Пари, ты лучшая!</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Arial Narrow Bold', sans-serif;
+        font-weight:700;
+        text-shadow: 4px 4px 4px #000;
+        color: #f387d3;
+        text-align: center;
+    }
+    body {
+        background-image: url(images/background.webp);
+        background-repeat: repeat;
+        background-position: center;
+        background-size: 150%;
+    }
+    header {
+        font-size: 32px;
+        padding: 4px;
+        
+        background-color: #f387d3aa;
+    }
+    main {
+        margin-top: 32px;
+    }
+    main div {
+        font-size: 28px;
+    }
+    .main__paragraph_1, .main__paragraph_2, .main__paragraph_3, .main__paragraph_4 {
+        margin-top: 24px;
+        padding: 2rem;
+        text-wrap: wrap;
+    }
+    .main__paragraph_2 {
+        background-color: #fffa;
+        border-top: 2px #f387d3 solid;
+        border-bottom: 2px #f387d3 solid;
+    }
+    
+    .main__paragraph_3 {
+        background-color: #f99;
+        
+        border-top: 2px #f387d3 solid;
+        border-bottom: 2px #f387d3 solid;
+    }
+    .main__paragraph_3 {
+        color: #fff;    
+    }
+    .main__paragraph_3 p {
+        color: #f387d3;
+        display: inline;
+    }
+    .textarea {
+        
+        color: #000;
+        text-shadow: none;
+        padding: 8px;
+        height: auto;
+    }
+    button {
+        background-color: fuchsia;
+        
+        height: 8vh;
+        margin-top: 16px;
+        border-radius: 50px;
+        color: #000;
+        box-shadow: #000 0px 0px 2px 1px;
+        font-size: 24px;
+        text-shadow: none;
+    }
+</style>
+<body>
+    <header>Паризода - самая лучшая девочка!</header>
+    <main>
+        <div class="main__paragraph_1">
+            Паризодка, ты у меня вообще самая лучшая.
+            <p>Я очень сильно тебя люблю</p>
+        </div>
+
+        <div class="main__paragraph_2">
+            <li>
+                <ul>Ты - интересная!</ul>
+                <ul>Ты - комфортная!</ul>
+                <ul>Ты - приятная!</ul>
+                <ul>Ты - привлекательная!</ul>
+                <ul>Ты - умная!</ul>
+                <ul>Ты - неповторимая!</ul>
+                <ul>Ты - превосходная!</ul>
+                <ul>Ты - милая!</ul>
+                <ul>Ты - понимающая!</ul>
+                <ul>Ты - заботливая!</ul>
+                <ul>Ты - нежная!</ul>
+                <ul>Ты - незабываемая!</ul>
+                <ul>Ты - моя!</ul>
+                <ul>Ты - любимая!</ul>
+                <ul>Ты - несравненная!</ul>
+                <ul>Ты - чудо!</ul>
+                <ul>Ты - лучшая!</ul>
+            </li>
+        </div>
+
+
+        <div class="main__paragraph_3">
+            
+            Я настолько сильно люблю <p>ТЕБЯ</p>, что постоянно только о <p>ТЕБЕ</p> и думаю. <p>ТЫ</p> не вылезаешь у меня из головы. <p>ТЫ</p> первая кого я представляю в своей голове когда просыпаюсь.
+            
+        </div>
+
+        <div class="main__paragraph_4">
+            Мне никогда не хватит слов, чтобы описать то, насколько сильно я тебя люблю!
+            <br>
+            <button>Нажми на меня</button>
+            <div class="textarea"></div>
+        </div>
+    </main>
+
+    <script>
+        const textarea = document.querySelector('.textarea')
+        let time = 500
+        const button = document.querySelector('button')
+        const handleClick =()=>{
+            const timer = setInterval(()=>{
+                counter +=1
+                text = `<div>${counter}. Паризода, я тебя люблю!</div`
+                time +=-10
+                
+                textarea.innerHTML += text
+            
+            }, time)
+            button.style.display = 'none'
+        }
+        button.onclick = (handleClick)
+        let text = ''
+        let counter = 0
+        
+    </script>
+</body>
+</html>
